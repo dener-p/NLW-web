@@ -1,0 +1,136 @@
+#page-signIn {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--color-box-base);
+  display: flex;
+}
+
+#page-signIn .background-logo {
+  display: none;
+}
+
+#page-signIn main {
+  padding-top: 3.4rem;
+  overflow: hidden;
+  width: 90%;
+  max-width: 74rem;
+  margin: 0 auto;
+}
+
+#page-signIn main a {
+  margin-left: 2rem;
+  height: 3.2rem;
+  transition: opacity 0.2s;
+}
+
+#page-signIn main a:hover {
+  opacity: 0.6;
+}
+#page-signIn main fieldset legend {
+  display: flex;
+  flex-direction: column;
+}
+
+#page-signIn main fieldset legend h1 {
+  align-self: start;
+  margin-top: 4rem;
+  margin-bottom: 1.2rem;
+  font: 700 3.8rem Poppins;
+  color: var(--color-text-title);
+}
+
+#page-signIn main fieldset legend span {
+  align-self: start;
+  font: 700 2.4rem Archivo;
+  color: var(--color-text-base);
+  margin-bottom: 3rem;
+  max-width: 38rem;
+}
+
+#page-signIn main fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-signIn main fieldset legend {
+  font: 700 2.4rem Archivo;
+  color: var(--color-text-title);
+  margin-bottom: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-signIn main footer button {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  width: 90%;
+  height: 5.6rem;
+  background-color: var(--color-input-background);
+  color: var(--color-text-base);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  transition: color 0.2s;
+  margin-top: 3.2rem;
+}
+
+#page-signIn main footer button:hover {
+  background-color: var(--color-secundary-dark);
+  color: var(--color-text-in-primary);
+}
+
+@media (min-width: 800px) {
+  #page-signIn .background-logo {
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+
+  #page-signIn .background-logo #logoBG {
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+
+  #page-signIn .background-logo #logoImg {
+    position: absolute;
+    margin: 3rem auto;
+    margin-bottom: 8rem;
+    height: 10rem;
+    width: 24rem;
+  }
+
+  #page-signIn .background-logo h2 {
+    font-weight: 500;
+    font-size: 2.2rem;
+    line-height: 3.2rem;
+    margin-top: 10rem;
+    max-width: 24rem;
+    color: var(--color-text-in-primary);
+  }
+
+  #page-signIn main form {
+    padding: 0 10rem;
+  }
+
+  #page-signIn main a {
+    margin-left: 12rem;
+  }
+}
